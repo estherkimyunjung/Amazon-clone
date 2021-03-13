@@ -28,7 +28,7 @@ function Home() {
             title="Soundance Laptop Stand, Aluminum Computer Riser, Ergonomic Laptops Elevator for Desk, Metal Holder Compatible with 10 to 15.6 Inches Notebook Computer, Silver"
             price={25.99}
             image="https://images-na.ssl-images-amazon.com/images/I/71Ox7ORXCsL._AC_SL1500_.jpg"
-            rating={5}
+            rating={3}
           />
         </div>
         <div className="home_row">
