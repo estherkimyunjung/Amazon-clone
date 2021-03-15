@@ -15,32 +15,33 @@ const stripe = require("stripe")(
 );
 //API
 
-//API Config
+//API config
 const app = express();
 
-//Middlewres
+//Middlewares
 app.use(cors({ origin: true }));
 app.use(express.json());
 
 //API routes
-app.get("/", (request, response) => response.status(200).send("Hello World"));
+app.get("/", (request, response) => response.status(200).send("Hello World!!"));
 
 app.post("/payments/create", async (request, response) => {
   const total = request.query.total;
-  console.log("Payment request for this total amount>>>>", total);
+  console.log("PAYMENT REQUEST RECIEVED for this amount >>>", total);
+
   const paymentIntent = await stripe.paymentIntents.create({
     amount: total, //subunits of the currency
     currency: "usd",
   });
 
-  // OK -Created
+  //OK - Created
   response.status(201).send({
     clientSecret: paymentIntent.client_secret,
   });
 });
 
-//Listen Command
+//Listen command
 exports.api = functions.https.onRequest(app);
 
 //example endpoint
-//http://localhost:5001/ecommerce-app-e9e30/us-central1/api
+// http://localhost:5001/ecommerce-app-e9e30/us-central1/api
