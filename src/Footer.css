@@ -1,0 +1,35 @@
+.footer,
+.footer_copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 70px;
+  background-color: #22303e;
+  color: #ddd;
+}
+
+.footer_columns {
+  padding: 20px;
+  height: 200px;
+}
+
+.footer_columns > h3 {
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.footer_rows {
+  top: 0;
+}
+
+.footer_rows > h4 {
+  padding-bottom: 6px;
+  color: #dddddd;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer_copyright > p {
+  text-align: center;
+  font-size: 13px;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import LocationIcon from "@material-ui/icons/Room";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { Link } from "react-router-dom";
@@ -24,6 +25,15 @@ function Header() {
           alt="amazon logo"
         />
       </Link>
+      <LocationIcon className="header_locationIcon" />
+      <div className="header_address">
+        <div className="header_address_rowOne header_optionLineOne">
+          Deliver to You
+        </div>
+        <div className="header_address_rowTwo header_optionLineTwo">
+          Select Your Address
+        </div>
+      </div>
       <div className="header_search">
         <input className="header_searchInput" type="text" />
         <SearchIcon className="header_searchIcon" />
