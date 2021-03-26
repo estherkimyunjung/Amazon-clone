@@ -62,7 +62,12 @@ function Footer() {
         <p>
           Made by <strong> Esther Kim </strong>
           (Full-stack Developer)
-          <em> Email : estherkimyunjung@gmail.com</em>
+          <a href="mailto:estherkimyunjung@gmail.com">
+            <em>
+              {" "}
+              - <strong> Contact by Email </strong>
+            </em>
+          </a>
           <br />
           <p className="footer_copyright_year">©2021 Esther Kim</p>
         </p>
